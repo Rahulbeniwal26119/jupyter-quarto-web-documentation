@@ -162,4 +162,5 @@ cython_debug/
 #.idea/
 
 /.quarto/
-_sites/
+_site/
+covid_analysis_files/*
