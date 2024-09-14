@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "COVID-19 Data Analysis"
+  navbar:
+    left:
+      - text: "Introduction"
+        href: index.qmd
+      - text: "COVID Analysis"
+        href: covid_analysis.ipynb
+
+
+format:
+  html:
+    theme: cosmo              # More vibrant theme; you can also try 'yeti', 'journal', or 'lux'
+    toc: true                 # Enables table of contents
+    toc-depth: 3              # Depth of headers in table of contents
+    code-fold: true           # Adds collapsible code blocks
+    code-tools: true          # Adds copy code button to all code blocks
+    number-sections: true     # Number sections
+    fig-align: center         # Align figures to the center
+    smooth-scroll: true       # Smooth scrolling between sections
+    html-math-method: mathjax # Adds mathjax support for mathematical expressions
+    page-layout: full         # Use the full-width layout for better visualization space
+    css: styles.css           # Add custom CSS for tables, fonts, and other styling
+
+    # Additional markdown extensions
+    markdown:
+      fenced-code-attributes: true
+      tables: true
+      grid-tables: true        # Enables more sophisticated table formatting
+      footnotes: true
+      pipe-tables: true        # Markdown tables with pipes (|) support
+      inline-code-as-latex: true

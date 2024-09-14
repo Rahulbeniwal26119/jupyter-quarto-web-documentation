@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "quarto-tutorial.html",
+    "href": "quarto-tutorial.html",
+    "title": "quarto-tutorial",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "quarto-tutorial.html#quarto",
+    "href": "quarto-tutorial.html#quarto",
+    "title": "quarto-tutorial",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\n1 COVID-19 Data Analysis\nThis project provides an in-depth analysis of the COVID-19 pandemic, focusing on trends in total cases and deaths for key countries. The data comes from Our World in Data.\nExplore the analysis below to gain insights into how the pandemic evolved globally."
+  },
+  {
+    "objectID": "covid_analysis.html",
+    "href": "covid_analysis.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "In this analysis, we will examine the spread of COVID-19 across several countries, focusing on trends in total cases and deaths over time. For more information on the COVID-19 pandemic, refer to the WHO Website."
+  },
+  {
+    "objectID": "covid_analysis.html#covid-19-growth-rate",
+    "href": "covid_analysis.html#covid-19-growth-rate",
+    "title": "Introduction",
+    "section": "0.1 COVID-19 Growth Rate",
+    "text": "0.1 COVID-19 Growth Rate\nWe model the growth of COVID-19 cases using an exponential growth model, which can be expressed as:\n\\[ P(t) = P_0 e^{rt} \\]\nWhere:\n\n( P(t) ) is the population (cases) at time ( t )\n( P_0 ) is the initial population (initial number of cases)\n( r ) is the growth rate\n( t ) is time\n\nWe’ll now calculate the growth rate using the data available for different regions.\n\n\nCode\nimport pandas as pd\n\n# Load COVID-19 data\nurl = \"https://covid.ourworldindata.org/data/owid-covid-data.csv\"\ncovid_data = pd.read_csv(url)\n\n# Show first few rows\ncovid_data.head()\n\n\n\n\n\n\n\n\n\niso_code\ncontinent\nlocation\ndate\ntotal_cases\nnew_cases\nnew_cases_smoothed\ntotal_deaths\nnew_deaths\nnew_deaths_smoothed\n...\nmale_smokers\nhandwashing_facilities\nhospital_beds_per_thousand\nlife_expectancy\nhuman_development_index\npopulation\nexcess_mortality_cumulative_absolute\nexcess_mortality_cumulative\nexcess_mortality\nexcess_mortality_cumulative_per_million\n\n\n\n\n0\nAFG\nAsia\nAfghanistan\n2020-01-05\n0.0\n0.0\nNaN\n0.0\n0.0\nNaN\n...\nNaN\n37.746\n0.5\n64.83\n0.511\n41128772\nNaN\nNaN\nNaN\nNaN\n\n\n1\nAFG\nAsia\nAfghanistan\n2020-01-06\n0.0\n0.0\nNaN\n0.0\n0.0\nNaN\n...\nNaN\n37.746\n0.5\n64.83\n0.511\n41128772\nNaN\nNaN\nNaN\nNaN\n\n\n2\nAFG\nAsia\nAfghanistan\n2020-01-07\n0.0\n0.0\nNaN\n0.0\n0.0\nNaN\n...\nNaN\n37.746\n0.5\n64.83\n0.511\n41128772\nNaN\nNaN\nNaN\nNaN\n\n\n3\nAFG\nAsia\nAfghanistan\n2020-01-08\n0.0\n0.0\nNaN\n0.0\n0.0\nNaN\n...\nNaN\n37.746\n0.5\n64.83\n0.511\n41128772\nNaN\nNaN\nNaN\nNaN\n\n\n4\nAFG\nAsia\nAfghanistan\n2020-01-09\n0.0\n0.0\nNaN\n0.0\n0.0\nNaN\n...\nNaN\n37.746\n0.5\n64.83\n0.511\n41128772\nNaN\nNaN\nNaN\nNaN\n\n\n\n\n5 rows × 67 columns"
+  },
+  {
+    "objectID": "covid_analysis.html#descriptive-statistics",
+    "href": "covid_analysis.html#descriptive-statistics",
+    "title": "Introduction",
+    "section": "0.2 Descriptive Statistics",
+    "text": "0.2 Descriptive Statistics\nBelow is a summary of the COVID-19 data, including the total number of cases, deaths, and recoveries.\n\n\n\nMetric\nTotal Count\n\n\n\n\nConfirmed Cases\n120,000,000\n\n\nDeaths\n2,500,000\n\n\nRecovered\n95,000,000"
+  },
+  {
+    "objectID": "covid_analysis.html#conclusion",
+    "href": "covid_analysis.html#conclusion",
+    "title": "Introduction",
+    "section": "2.1 Conclusion",
+    "text": "2.1 Conclusion\nThe analysis highlights several critical insights into the spread of COVID-19. The exponential growth model effectively captured the initial phase of the pandemic, and we observed a varying reproduction number across different regions. With a basic reproduction number ( R_0 ) of over 3.0 in some areas, stringent interventions were necessary to contain the spread.\nFuture work could involve a more detailed analysis of intervention measures such as lockdowns and vaccination campaigns, which would give a clearer picture of their effectiveness."
+  }
+]

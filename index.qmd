@@ -1,0 +1,6 @@
+# COVID-19 Data Analysis
+
+This project provides an in-depth analysis of the COVID-19 pandemic, focusing on trends in total cases and deaths for key countries. 
+The data comes from [Our World in Data](https://ourworldindata.org/coronavirus).
+
+Explore the analysis below to gain insights into how the pandemic evolved globally.

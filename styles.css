@@ -1,0 +1,53 @@
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Code block styling */
+pre, code {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Fira Code', monospace;
+  overflow-x: auto;
+}
+
+/* Figure and image styling */
+figure img {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Header styling */
+h1, h2, h3, h4 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+/* Styling the footer */
+footer {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.85em;
+  color: #333;
+}
